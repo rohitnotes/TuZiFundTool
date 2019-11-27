@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.bryant.tuzifundtool"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", '"http://fundmobapi.eastmoney.com/"'
+            buildConfigField "boolean", "TYPE", "true"
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "BASE_URL", '"http://fundmobapi.eastmoney.com/"'
+            buildConfigField "boolean", "TYPE", "false"
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    //自定义打包时apk名称
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "兔子基金工具.apk"
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode = true
+        preDexLibraries = false
+        additionalParameters = [
+                '--multi-dex',//多分包
+                '--set-max-idx-number=60000'//每个包内方法数上限
+        ]
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //MVPArms
+    implementation 'me.jessyan:arms:2.5.2'
+    //AndroidAutoSize
+    implementation 'me.jessyan:autosize:1.1.2'
+    //Glide扩展库
+    implementation 'me.jessyan:arms-imageloader-glide:2.5.2'
+    //Butterknife 插件
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //dagger2依赖插件
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
+    //okhttp日志监听
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    //dex分包
+    implementation 'com.android.support:multidex:1.0.3'
+    //监听网络上传下载的进度
+    implementation 'me.jessyan:progressmanager:1.5.0'
+    // 让Retrofit同时支持多个BaseUrl以及动态改变BaseUrl
+    implementation 'me.jessyan:retrofit-url-manager:1.4.0'
+    //Fragmentation
+    implementation 'me.yokeyword:fragmentation:1.3.7'
+    //BRVAH
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+    //LitePal数据库
+    implementation 'org.litepal.android:java:3.0.0'
+    //通用工具类
+    implementation 'com.blankj:utilcode:1.23.7'
+    //搜索选框
+    implementation 'com.github.YangsBryant:BSearchEdit:1.0.8'
+    //rxbus2
+    implementation 'com.hwangjr.rxbus:rxbus:2.0.0'
+}

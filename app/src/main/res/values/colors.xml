@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="transparent_background">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="back">#000000</color>
+    <color name="main_background">#EEEEEE</color>
+    <color name="item_line">#EAEAEA</color>
+    <color name="item_state3">#999999</color>
+    <color name="item_state2">#F64A44</color>
+    <color name="item_state">#3CB371</color>
+    <color name="map_hite">#999999</color>
+    <color name="map_edtext">#181818</color>
+    <color name="bottom_cj">#999999</color>
+    <color name="edit_background">#FDFBFB</color>
+    <color name="color_progress">#0A89FF</color>
+    <color name="color_widgettext">#59000000</color>
+</resources>

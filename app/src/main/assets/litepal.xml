@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="fundcode" />
+    <version value="1" />
+    <list>
+        <mapping class="com.bryant.tuzifundtool.bean.FundcodeBean" />
+    </list>
+
+</litepal>
