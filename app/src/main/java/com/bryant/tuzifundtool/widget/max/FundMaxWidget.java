@@ -107,7 +107,7 @@ public class FundMaxWidget extends AppWidgetProvider {
         Map<String,Object> map = new HashMap<>();
         map.put("pageIndex","1");
         map.put("ReqNo","1574412794906");
-        map.put("pageSize","10");
+        map.put("pageSize","30");
         map.put("cccccccTokenErrorStop","true");
         map.put("plat","Android");
         map.put("appType","ttjj");

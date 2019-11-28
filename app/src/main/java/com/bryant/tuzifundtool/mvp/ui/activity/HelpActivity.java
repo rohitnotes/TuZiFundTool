@@ -27,7 +27,6 @@ import butterknife.BindView;
 
 import static com.jess.arms.utils.Preconditions.checkNotNull;
 
-
 /**
  * ================================================
  * Description:

@@ -1,6 +1,7 @@
 package com.bryant.tuzifundtool.mvp.presenter;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.bryant.tuzifundtool.app.BaseObserver;
 import com.bryant.tuzifundtool.app.BaseSupportActivity;
@@ -57,7 +58,7 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
         Map<String,Object> map = new HashMap<>();
         map.put("pageIndex","1");
         map.put("ReqNo","1574412794906");
-        map.put("pageSize","10");
+        map.put("pageSize","30");
         map.put("cccccccTokenErrorStop","true");
         map.put("plat","Android");
         map.put("appType","ttjj");
@@ -141,6 +142,7 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
     }
 
     public void getFundcode(String text){
+        Log.i("code","text"+text);
         if(!"".equals(text)&& text != null) {
             String[] sp = text.split(" ");
             FundcodeBean fundcode = new FundcodeBean();
@@ -151,6 +153,7 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
         StringBuilder code = new StringBuilder();
         for (int i=0;i<fundcodeBeans.size();i++){
             code.append(",").append(fundcodeBeans.get(i).getFundcode());
+            Log.i("code",""+fundcodeBeans.get(i).getFundcode());
         }
         mRootView.searchCodeFund(code.toString());
     }
