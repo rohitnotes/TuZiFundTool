@@ -8,6 +8,7 @@
 
 # 软件截图
 
+<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg" width="200" hegiht="300"/>
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg)
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.jpg)
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover04.jpg)
