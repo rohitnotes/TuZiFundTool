@@ -6,6 +6,6 @@
 
 #软件截图
 
-![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.png)
-![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.png)
+![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg)
+![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.jpg)
 
