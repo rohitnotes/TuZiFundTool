@@ -10,6 +10,9 @@
 
 <img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg" width="240" hegiht="360"/>
 <img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.jpg" width="240" hegiht="360"/>
+<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover04.jpg" width="240" hegiht="360"/>
+<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover05.jpg" width="240" hegiht="360"/>
+<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover06.jpg" width="240" hegiht="360"/>
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg)
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.jpg)
 ![这是一张图片](https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover04.jpg)
