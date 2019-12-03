@@ -11,6 +11,5 @@
 <img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover02.jpg" width="240" hegiht="320"/>
 <img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover03.jpg" width="240" hegiht="320"/>
 <img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover04.jpg" width="240" hegiht="320"/>
-<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover05.jpg" width="240" hegiht="320"/>
-<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover06.jpg" width="320" hegiht="480"/>
+<img src="https://github.com/YangsBryant/TuZiFundTool/blob/master/tuzi_cover05.jpg" width=320" hegiht="480"/>
 
