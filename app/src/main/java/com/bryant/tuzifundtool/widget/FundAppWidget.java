@@ -141,7 +141,7 @@ public class FundAppWidget extends AppWidgetProvider {
             return;
         }
         String isOpenFund = "闭市";
-        if(TimeScope.isCurrentInTimeScope(9, 0,15,0)){
+        if(TimeScope.isCurrentInTimeScope(9, 30,15,0)){
             isOpenFund = "";
         }
         AppWidgetManager appWidgetManger = AppWidgetManager.getInstance(context);

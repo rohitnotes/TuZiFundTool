@@ -183,7 +183,7 @@ public class MainActivity extends BaseSupportActivity<MainPresenter> implements 
             return;
         }
         String isOpenFund = "闭市";
-        if(TimeScope.isCurrentInTimeScope(9, 0,15,0)){
+        if(TimeScope.isCurrentInTimeScope(9, 30,15,0)){
             isOpenFund = "";
         }
         if(szFundBean.getData().getDiff().get(0).getF3()>0) {
