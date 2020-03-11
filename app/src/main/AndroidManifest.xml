@@ -27,6 +27,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/fund_app_widget_info" />
         </receiver>
+
         <receiver android:name=".widget.max.FundMaxWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -35,6 +36,16 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/fund_app_widget_info2" />
+        </receiver>
+
+        <receiver android:name=".widget.min.FundMinWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/fund_app_widget_info3" />
         </receiver>
 
         <service

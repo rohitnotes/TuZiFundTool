@@ -1,4 +1,4 @@
-package com.bryant.tuzifundtool.widget.max;
+package com.bryant.tuzifundtool.widget.min;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -29,6 +29,7 @@ import org.litepal.LitePal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
@@ -38,7 +39,7 @@ import timber.log.Timber;
 /**
  * Implementation of App Widget functionality.
  */
-public class FundMaxWidget extends AppWidgetProvider {
+public class FundMinWidget extends AppWidgetProvider {
 
     static RemoteViews views;
     long sleep = 50;
@@ -60,7 +61,7 @@ public class FundMaxWidget extends AppWidgetProvider {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 200, toIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         views.setPendingIntentTemplate(R.id.listView, pendingIntent);
 
-        Intent refreshIntent = new Intent(context, FundMaxWidget.class);
+        Intent refreshIntent = new Intent(context, FundMinWidget.class);
         refreshIntent.setAction("0x00");
         final PendingIntent refreshPendingIntent = PendingIntent.getBroadcast(context, 0, refreshIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         views.setOnClickPendingIntent(R.id.bt,refreshPendingIntent);
@@ -96,7 +97,7 @@ public class FundMaxWidget extends AppWidgetProvider {
                 ListWidgetService.mList.add(map);
             }
         }
-        ComponentName mComponentName = new ComponentName(context, FundMaxWidget.class);
+        ComponentName mComponentName = new ComponentName(context, FundMinWidget.class);
         manager.notifyAppWidgetViewDataChanged(manager.getAppWidgetIds(mComponentName),
                 R.id.listView);
         ToastUtils.showShort("已更新");
@@ -156,7 +157,7 @@ public class FundMaxWidget extends AppWidgetProvider {
             views.setTextColor(R.id.szzsText,context.getResources().getColor(R.color.item_state));
             views.setTextViewText(R.id.szzsText, "上证指数：" + szFundBean.getData().getDiff().get(0).getF2()+"  "+szFundBean.getData().getDiff().get(0).getF3()+"%"+"  "+isOpenFund);
         }
-        appWidgetManger.updateAppWidget(new ComponentName(context, FundMaxWidget.class), views);
+        appWidgetManger.updateAppWidget(new ComponentName(context, FundMinWidget.class), views);
     }
 
     public void getSZFund(Context context){
@@ -231,7 +232,7 @@ public class FundMaxWidget extends AppWidgetProvider {
             if (msg.what == START_ANIMATION) {
                 views = new RemoteViews(mContext.getPackageName(), R.layout.fund_app_widget);
                 views.setImageViewResource(R.id.bt, bitmapId[msg.arg1]);
-                appWidgetManger.updateAppWidget(new ComponentName(mContext, FundMaxWidget.class), views);
+                appWidgetManger.updateAppWidget(new ComponentName(mContext, FundMinWidget.class), views);
                 //循环图片
                 num++;
                 if(num<=bitmapId.length) {
@@ -242,7 +243,6 @@ public class FundMaxWidget extends AppWidgetProvider {
             }
         }
     };
-
 
 }
 
