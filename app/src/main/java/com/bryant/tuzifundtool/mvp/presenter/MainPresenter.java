@@ -3,6 +3,7 @@ package com.bryant.tuzifundtool.mvp.presenter;
 import android.app.Application;
 import android.util.Log;
 
+import com.blankj.utilcode.util.ToastUtils;
 import com.bryant.tuzifundtool.app.BaseObserver;
 import com.bryant.tuzifundtool.app.BaseSupportActivity;
 import com.bryant.tuzifundtool.bean.FundcodeBean;
@@ -136,7 +137,13 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
 
                     @Override
                     public void onFailure(Throwable e) {
+                        Log.i("异常信息",e.toString());
                         Timber.i(e.toString());
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        super.onError(e);
                     }
                 });
     }

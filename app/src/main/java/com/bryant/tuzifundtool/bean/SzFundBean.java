@@ -16,7 +16,7 @@ public class SzFundBean {
 
     private int rc;
     private int rt;
-    private int svr;
+    private long svr;
     private int lt;
     private int full;
     private DataBean data;
@@ -37,11 +37,11 @@ public class SzFundBean {
         this.rt = rt;
     }
 
-    public int getSvr() {
+    public long getSvr() {
         return svr;
     }
 
-    public void setSvr(int svr) {
+    public void setSvr(long svr) {
         this.svr = svr;
     }
 
