@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_widgettext"
+    android:background="@drawable/bg_widget"
     android:padding="@dimen/widget_margin"
     android:orientation="vertical">
 

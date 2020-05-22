@@ -7,7 +7,7 @@ android {
         minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.3"
+        versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -31,7 +31,7 @@ android {
     //自定义打包时apk名称
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            outputFileName = "兔子基金工具.apk"
+            outputFileName = "兔子基金工具_1.0.4.apk"
         }
     }
     dexOptions {
